@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/img_photo_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+    <TextView
+            android:id="@+id/txt_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_film"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="205dp"
+            android:layout_toRightOf="@id/img_photo"/>
+    <TextView
+            android:id="@+id/txt_description_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:layout_marginTop="235dp"
+            android:layout_alignTop="@id/img_photo_detail"
+            android:ellipsize="end"
+            android:text="@string/detail_film"/>
+
+</RelativeLayout>
